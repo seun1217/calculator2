@@ -1,0 +1,123 @@
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 50%;
+  min-width: 200px;
+  margin: auto;
+}
+
+.display {
+  height: 50px;
+  background-color: salmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gold;
+}
+
+.button {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gold;
+}
+
+.button-panel {
+  display: grid;
+  grid-template:
+    'allClear allClear divide multiply'
+    'seven eight nine minus'
+    'four five six plus'
+    'one two three equal'
+    'zero zero dot equal'
+    'undo undo redo redo';
+}
+
+.allClear {
+  grid-area: allClear;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.divide {
+  grid-area: divide;
+  color: orange;
+}
+
+.divide::after {
+  margin-left: -5px;
+  color: black;
+  content: '÷';
+}
+
+.multiply {
+  grid-area: multiply;
+  color: orange;
+}
+
+.multiply::after {
+  margin-left: -10px;
+  color: black;
+  content: '×';
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.four {
+  grid-area: four;
+}
+
+.three {
+  grid-area: three;
+}
+
+.two {
+  grid-area: two;
+}
+
+.one {
+  grid-area: one;
+}
+
+.equal {
+  grid-area: equal;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.dot {
+  grid-area: dot;
+}
+
+.undo {
+  grid-area: undo;
+}
+
+.redo {
+  grid-area: redo;
+}
